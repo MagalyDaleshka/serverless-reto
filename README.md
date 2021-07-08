@@ -5,24 +5,23 @@ Serverless reto with AWS lambdas
 # Install and configure serverless framework
 > npm i serverless -g
 
-# Install and configure AWS client
+# Instalación y configuración AWS client
 https://docs.aws.amazon.com/es_es/cli/latest/userguide/installing.html
 https://serverless.com/framework/docs/providers/aws/guide/credentials/
 
-# CRUD of users 
+# CRUD para users 
 
-## Install dependencies
+## Instalar dependencias dependencies
 >cd users && npm install
 
-## Running on local
 >npm i serverless-mysql
 >serverless offline start
 
-## Upload to AWS
+##  AWS
 > cd users && serverless deploy
 
-## Test de API
-You have examples of curl requests on "curls.sh". Must to change de SERVICE_URL with your service URL on AWS.
+## Prueba del API
+En dicha carpeta adjunto ejemplos del API  "curls.sh".Debe cambiar el SERVICE_URL con el URL del servidor AWS.
 
-## Remove from AWS
+## Para borrar de  AWS
 > serverless remove
