@@ -1,0 +1,32 @@
+service: serverless-reto
+
+plugins:
+  - serverless-offline 
+
+provider:
+  name: aws
+  stage: dev
+  region: eu-west-3
+  runtime: nodejs14.16
+
+functions:
+  createUser:
+    handler: handler.createUser
+    events:
+      - http: 'POST /users'
+  updateUser:
+    handler: handler.updateUser
+    events:
+      - http: 'PUT /users/{id}'
+  getUsers:
+    handler: handler.getUsers
+    events:
+      - http: 'GET /users'
+  getUser:
+    handler: handler.getUserId
+    events:
+      - http: 'GET /users/{id}'
+  deleteuser:
+    handler: handler.deleteUser
+    events:
+      - http: 'PUT /usersDelete/{id}'
