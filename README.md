@@ -1,8 +1,8 @@
 # serverless-reto
-Serverless reto with AWS lambdas
+Serverless reto con AWS lambdas y MySQL
 
 
-# Install and configure serverless framework
+# Instalación y configuración serverless framework
 > npm i serverless -g
 
 # Instalación y configuración AWS client
